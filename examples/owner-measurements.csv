@@ -1,0 +1,13 @@
+experiment_id,title,experiment_date,status,notes,sample,sample_description,measurement,value,unit,measured_on
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 1,0.2,AU,2026-10-24
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 2,0.21,AU,2026-10-24
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 3,0.22,AU,2026-10-24
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 1,0.22,AU,2026-10-24
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 2,0.23,AU,2026-10-24
+2,Synthetic temperature series,2026-10-24,in progress,SYNTHETIC: temperature labels exercise sample tracking.,SYN-B2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 3,0.24,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 1,0.1,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 2,0.11,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A1,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 3,0.12,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 1,0.12,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 2,0.13,AU,2026-10-24
+1,Synthetic buffer screen,2026-10-24,completed,SYNTHETIC: deterministic buffer fixtures for app demonstration.,SYN-A2,Synthetic software fixture; no real specimen.,Synthetic absorbance replicate 3,0.14,AU,2026-10-24

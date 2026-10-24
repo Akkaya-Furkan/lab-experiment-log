@@ -1,0 +1,2 @@
+# csv.writer emits standard CRLF records; CR is not trailing whitespace.
+*.csv whitespace=cr-at-eol

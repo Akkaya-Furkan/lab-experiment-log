@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}<div class="heading"><div><p class="eyebrow">EXPERIMENT NOTEBOOK</p><h1>Your experiments</h1><p>Trace every measurement back to its sample.</p></div><a class="button" href="{{ url_for('new_experiment') }}">+ New experiment</a></div>
+<form method="get" class="search"><label class="grow">Search experiments, samples and measurements<input name="q" value="{{ query }}" maxlength="200" placeholder="Try buffer, SYN-A1 or absorbance"></label><button>Search</button><a class="button secondary" href="{{ url_for('export_csv', q=query) }}">Export CSV</a></form>
+<p class="muted">{{ experiments|length }} experiment(s){% if query %} matching “{{ query }}” · <a href="{{ url_for('index') }}">Clear search</a>{% endif %}</p>
+<div class="cards">{% for e in experiments %}<article class="panel"><div class="row"><span class="badge">{{ e.status }}</span><time>{{ e.experiment_date }}</time></div><h2><a href="{{ url_for('detail', experiment_id=e.id) }}">{{ e.title }}</a></h2><p class="excerpt">{{ e.notes[:220] }}</p><div class="counts"><span>{{ e.sample_count }} samples</span><span>{{ e.measurement_count }} measurements</span></div></article>
+{% else %}<section class="panel"><h2>No experiments found</h2><p>Create an experiment or try a different search.</p></section>{% endfor %}</div>{% endblock %}

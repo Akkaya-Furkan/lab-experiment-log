@@ -1,0 +1,41 @@
+{
+  "data_kind": "synthetic software fixtures; not experimental findings",
+  "transport": "HTTP over loopback; server restarted against same SQLite file",
+  "counts_expected": {
+    "users": 2,
+    "experiments": 3,
+    "samples": 6,
+    "measurements": 12,
+    "attachments": 1
+  },
+  "counts_actual": {
+    "users": 2,
+    "experiments": 3,
+    "samples": 6,
+    "measurements": 12,
+    "attachments": 1
+  },
+  "duplicate_seed_refused_without_mutation": true,
+  "owner_buffer_search_experiments": 1,
+  "observer_buffer_search_experiments": 0,
+  "owner_csv_rows": 12,
+  "observer_csv_rows": 0,
+  "filtered_csv_rows": 6,
+  "csv_values_units_dates_labels_match_database": true,
+  "attachment_download_bytes": 76,
+  "attachment_sha256": "2dc211949646a98eef6ac24b0d88d44075d004306df01b8362af6c6f6d727fdc",
+  "counts_after_restart": {
+    "users": 2,
+    "experiments": 3,
+    "samples": 6,
+    "measurements": 12,
+    "attachments": 1
+  },
+  "measurement_rows_after_restart": 12,
+  "artifacts_expected": 3,
+  "artifacts": [
+    "acceptance.json",
+    "owner-measurements.csv",
+    "experiment.html"
+  ]
+}

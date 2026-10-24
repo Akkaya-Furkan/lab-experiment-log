@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}<section class="auth panel"><p class="eyebrow">YOUR RESEARCH, ORGANIZED</p>
+<h1>{{ 'Create an account' if registering else 'Welcome back' }}</h1>
+<p>Keep experiments, samples and measurements in one notebook.</p>
+<form method="post" class="stack"><input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+<label>Username<input name="username" required minlength="3" maxlength="40" autocomplete="username"></label>
+<label>Password<input name="password" type="password" required minlength="{{ 10 if registering else 1 }}" maxlength="128" autocomplete="{{ 'new-password' if registering else 'current-password' }}"></label>
+{% if registering %}<small>Username: letters, digits, _, ., - only. Password: 10–128 characters.</small>{% endif %}
+<button>{{ 'Create account' if registering else 'Sign in' }}</button></form>
+<p><a href="{{ url_for('login' if registering else 'register') }}">{{ 'Already registered? Sign in' if registering else 'Create an account' }}</a></p></section>{% endblock %}

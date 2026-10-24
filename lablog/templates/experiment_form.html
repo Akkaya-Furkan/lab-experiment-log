@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}<a href="{{ url_for('index') }}">← Experiments</a><h1>{{ 'Edit experiment' if experiment else 'New experiment' }}</h1>
+<form method="post" class="panel stack"><input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+<label>Title<input name="title" maxlength="200" required value="{{ experiment.title if experiment else '' }}"></label>
+<div class="form-grid"><label>Experiment date<input name="experiment_date" type="date" required value="{{ experiment.experiment_date if experiment else '' }}"></label>
+<label>Status<select name="status">{% for status in ['planned','in progress','completed'] %}<option {% if experiment and experiment.status==status %}selected{% endif %}>{{ status }}</option>{% endfor %}</select></label></div>
+<label>Notes<textarea name="notes" maxlength="10000" rows="6">{{ experiment.notes if experiment else '' }}</textarea></label><button>Save experiment</button></form>{% endblock %}
