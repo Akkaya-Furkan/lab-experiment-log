@@ -7,10 +7,10 @@ name = "lab-experiment-log"
 version = "0.1.0"
 description = "A local, owner-isolated experiment notebook with SQLite persistence"
 requires-python = ">=3.11"
-dependencies = ["Flask==3.1.2"]
+dependencies = ["Flask==3.1.3"]
 
 [project.optional-dependencies]
-test = ["pytest==8.4.2"]
+test = ["pytest==9.0.3"]
 
 [tool.setuptools.packages.find]
 include = ["lablog*"]
